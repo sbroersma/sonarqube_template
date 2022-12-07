@@ -13,5 +13,5 @@ spec:
       name: Fetch Docs
       action: fetch:plain
       input:
-      targetPath: ./github_actions.yaml
-      url: https://github.com/sbroersma/hello_world_template
+      targetPath: './github_actions.yaml'
+      url: 'https://github.com/sbroersma/hello_world_template'
