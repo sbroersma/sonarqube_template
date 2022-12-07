@@ -1,0 +1,54 @@
+apiVersion: scaffolder.backstage.io/v1beta3?
+kind: Template
+metadata:
+  name: backstage-template-test
+  title: Backstage Template Test
+  description: A test to see if we can create a workflow in GitHub from Backstage template
+
+spec:
+  owner: sbroersma
+  type: service
+  parameters:
+  - title: Please enter your root Github repository url
+    required:
+      - repoUrl
+      - branchName
+      - title
+      - description
+      - sourcePath
+      - targetPath
+      #- token
+    properties:
+      repoUrl:
+        title: Repository Location
+        type: string
+        ui:field: RepoUrlPicker
+        ui:options:
+          allowedHosts:
+            - github.com
+      branchName:
+        title: Branch to use
+        type: string
+      title:
+        title: Pull Request title
+        type: string
+      description:
+        title: Description of change
+        type: string
+      sourcePath:
+        title: Path to copy from 
+      targetPath:
+        title: Path to add file to
+        type: string
+      token:
+        title: GitHub access token
+        type: string
+  steps:
+    - id: fetch-base
+      name: Fetch Base
+      action: fetch:template
+      input:
+        url: $${{ parameters.sourcePath }}
+        #values:
+        #  name: ${{ parameters.name }}
+        #  owner: ${{ parameters.owner }}    
