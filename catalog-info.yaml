@@ -10,14 +10,14 @@ spec:
 
   parameters:
     - title: Fill in some steps
-    properties:
-      url:
-        title: Source url
-        type: string
-        ui:field: RepoUrlPicker
-      targetPath:
-        title: Target Path
-        type: string
+      properties:
+        url:
+          title: Source url
+          type: string
+          ui:field: RepoUrlPicker
+        targetPath:
+          title: Target Path
+          type: string
 
   steps:
     - id: fetch-docs
