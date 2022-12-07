@@ -19,10 +19,10 @@ spec:
         title: Target Path
         type: string
 
-    steps:
-      - id: fetch-docs
-        name: Fetch Docs
-        action: fetch:plain
-        input:
-        targetPath: ${{ parameters.url }}#'./github_actions.yaml'
-        url: ${{ parameters.targetPath }}#'https://github.com/sbroersma/hello_world_template'
+  steps:
+    - id: fetch-docs
+      name: Fetch Docs
+      action: fetch:plain
+      input:
+      targetPath: ${{ parameters.url }}#'./github_actions.yaml'
+      url: ${{ parameters.targetPath }}#'https://github.com/sbroersma/hello_world_template'
