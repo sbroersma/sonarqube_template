@@ -8,10 +8,21 @@ spec:
   owner: Scott Broersma
   type: service
 
+  parameters:
+    - title: Fill in some steps
+    properties:
+      url:
+        title: Source url
+        type: string
+        ui:field: RepoUrlPicker
+      targetPath:
+        title: Target Path
+        type: string
+
   steps:
     - id: fetch-docs
       name: Fetch Docs
       action: fetch:plain
       input:
-      targetPath: './github_actions.yaml'
-      url: 'https://github.com/sbroersma/hello_world_template'
+      targetPath: ${{ parameters.url }}#'./github_actions.yaml'
+      url: ${{ parameters.targetPath }}#'https://github.com/sbroersma/hello_world_template'
