@@ -37,6 +37,7 @@ spec:
         type: string
       sourcePath:
         title: Path to copy from 
+        type: string
       targetPath:
         title: Path to add file to
         type: string
