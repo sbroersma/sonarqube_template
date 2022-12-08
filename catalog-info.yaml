@@ -33,9 +33,6 @@ spec:
         sourcePath:
           title: Source Path
           type: string
-        targetPath:
-          title: Target Path
-          type: string
         
         
 
