@@ -37,7 +37,7 @@ spec:
       action: debug:log
       input:
         message: "This is the workspace contents"
-        listWorkspace: true
+        listWorkspace: True
 
 
 
