@@ -36,7 +36,7 @@ spec:
       name: Output workspace
       action: debug:log
       input:
-        message: "This is the workspace contents"
+        message: $ {{ pwd }}
         listWorkspace: True
 
 
