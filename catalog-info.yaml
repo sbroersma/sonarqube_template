@@ -50,6 +50,7 @@ spec:
         url: ${{ parameters.url }}
     - id: output_workspace
       name: Output workspace
+      action: debug:log
       input:
         message: "This is the workspace contents"
         listWorkspace: true
