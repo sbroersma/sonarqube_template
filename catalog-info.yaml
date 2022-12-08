@@ -48,7 +48,7 @@ spec:
       name: Upload Sonarqube workflow
       action: publish:github:pull-request
       input:
-        repoUrl: "https://github.com/sbroersma/hello_world_template"
+        repoUrl: ${{ parameters.repoUrl }}
         branchName: "Sonarqube_workflow"
         title: "Sonarqube workflow"
         description:  "Sonarqube workflow pull request"
