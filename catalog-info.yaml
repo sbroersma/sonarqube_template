@@ -33,6 +33,13 @@ spec:
         description:
           title: Description
           type: string
+        sourcePath:
+          title: Source Path
+          type: string
+        targetPath:
+          title: Target Path
+          type: string
+        
         
 
   steps:
@@ -49,10 +56,10 @@ spec:
       action: publish:github:pull-request
       input:
         repoUrl: ${{ parameters.repoUrl }}
-        branchName: "Sonarqube_workflow"
-        title: "Sonarqube workflow"
-        description:  "Sonarqube workflow pull request"
-        sourcePath: ""
-        targetPath: "https://github.com/sbroersma/hello_world_template/.github/workflows"
+        branchName: ${{ parameters.branchName }}
+        title: ${{ parameters.title }}
+        description:  ${{ parameters.descripton }}
+        sourcePath: ${{ parameters.sourcePath }}
+        targetPath: ${{ parameters.targetPath }}
 
 
