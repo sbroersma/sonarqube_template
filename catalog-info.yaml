@@ -27,9 +27,6 @@ spec:
         branchName:
           title: Branch name
           type: string
-        title:
-          title: Pull Request name
-          type: string
         description:
           title: Description
           type: string
@@ -57,7 +54,7 @@ spec:
       input:
         repoUrl: ${{ parameters.repoUrl }}
         branchName: ${{ parameters.branchName }}
-        title: ${{ parameters.title }}
+        title: This_is_title
         description: ${{ parameters.descripton }}
         sourcePath: ${{ parameters.sourcePath }}
         targetPath: ${{ parameters.targetPath }}
