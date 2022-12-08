@@ -15,6 +15,9 @@ spec:
           title: Source url
           type: string
           ui:field: RepoUrlPicker
+          ui:options:
+            allowedHosts:
+              - github.com
         targetPath:
           title: Target Path
           type: string
@@ -24,5 +27,6 @@ spec:
       name: Fetch Docs
       action: fetch:plain
       input:
+        owner: "sbroersma"
         targetPath: ${{ parameters.url }}
         url: ${{ parameters.targetPath }}
