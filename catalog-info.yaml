@@ -58,7 +58,7 @@ spec:
         repoUrl: ${{ parameters.repoUrl }}
         branchName: ${{ parameters.branchName }}
         title: ${{ parameters.title }}
-        description:  ${{ parameters.descripton }}
+        description: ${{ parameters.descripton }}
         sourcePath: ${{ parameters.sourcePath }}
         targetPath: ${{ parameters.targetPath }}
 
