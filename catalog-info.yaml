@@ -42,8 +42,8 @@ spec:
       action: fetch:plain
       input:
         owner: "sbroersma"
-        targetPath: ${{ parameters.targetPath }}
-        url: ${{ parameters.url }}
+        targetPath: ${{ parameters.url }}
+        url: ${{ parameters.targetPath }}
 
     - id: upload-sq-workflow
       name: Upload Sonarqube workflow
