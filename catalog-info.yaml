@@ -53,6 +53,6 @@ spec:
         title: "Sonarqube workflow"
         description:  "Sonarqube workflow pull request"
         sourcePath: ""
-        targetPath: "/.github/workflows"
+        targetPath: "https://github.com/sbroersma/hello_world_template/.github/workflows"
 
 
