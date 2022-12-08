@@ -48,16 +48,12 @@ spec:
         owner: "sbroersma"
         targetPath: ${{ parameters.targetPath }}
         url: ${{ parameters.url }}
-
-    - id: upload-sq-workflow
-      name: Upload Sonarqube workflow
-      action: publish:github:pull-request
+    - id: output_workspace
+      name: Output workspace
       input:
-        repoUrl: ${{ parameters.repoUrl }}
-        branchName: ${{ parameters.branchName }}
-        title: This_is_title
-        description: ${{ parameters.description }}
-        sourcePath: ${{ parameters.sourcePath }}
-        targetPath: ${{ parameters.targetPath }}
+        message: "This is the workspace contents"
+        listWorkspace: true
 
 
+
+   
