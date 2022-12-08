@@ -53,7 +53,7 @@ spec:
       action: fetch:plain
       input:
         targetPath: ./
-        url: https://https://github.com/sbroersma/hello_world_template/tree/main/actions
+        url: https://github.com/sbroersma/hello_world_template/tree/main/actions
 
     - id: publish
       name: Publish
