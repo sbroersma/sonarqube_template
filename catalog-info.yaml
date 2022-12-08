@@ -21,6 +21,19 @@ spec:
         targetPath:
           title: Target Path
           type: string
+        repoUrl:
+          title: Target repo
+          type: string
+        branchName:
+          title: Branch name
+          type: string
+        title:
+          title: Pull Request name
+          type: string
+        description:
+          title: Description
+          type: string
+        
 
   steps:
     - id: fetch-docs
@@ -28,5 +41,18 @@ spec:
       action: fetch:plain
       input:
         owner: "sbroersma"
-        targetPath: ${{ parameters.url }}
-        url: ${{ parameters.targetPath }}
+        targetPath: ${{ parameters.targetPath }}
+        url: ${{ parameters.url }}
+
+    - id: upload-sq-workflow
+      name: Upload Sonarqube workflow
+      action: publish:github:pull-request
+      input:
+        repoUrl: "https://github.com/sbroersma/hello_world_template"
+        branchName: "Sonarqube_workflow"
+        title: "Sonarqube workflow"
+        description:  "Sonarqube workflow pull request"
+        sourcePath: ""
+        targetPath: "https://github.com/sbroersma/hello_world_template/.github/workflows"
+
+
