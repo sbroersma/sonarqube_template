@@ -53,7 +53,7 @@ spec:
       action: fetch:plain
       input:
         targetPath: ./
-        url: https://github.com/backstage/community/tree/main/backstage-community-sessions
+        url: https://https://github.com/sbroersma/hello_world_template/tree/main/actions
 
     - id: publish
       name: Publish
