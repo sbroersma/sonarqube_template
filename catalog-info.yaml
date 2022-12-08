@@ -5,7 +5,7 @@ metadata:
   title: Sonarqube Template Test
   description: A test to see if we can create a workflow in GitHub from Backstage template
 spec:
-  owner: Scott Broersma
+  #owner: Scott Broersma
   type: service
 
   parameters:
@@ -20,22 +20,6 @@ spec:
               - github.com
         targetPath:
           title: Target Path
-          type: string
-        repoUrl:
-          title: Target repo
-          type: string
-          ui:field: RepoUrlPicker
-          ui:options:
-            allowedHosts:
-              - github.com
-        branchName:
-          title: Branch name
-          type: string
-        description:
-          title: Description
-          type: string
-        sourcePath:
-          title: Source Path
           type: string
         
         
