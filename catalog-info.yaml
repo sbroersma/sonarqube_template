@@ -29,7 +29,6 @@ spec:
       name: Fetch Docs
       action: fetch:plain
       input:
-        owner: "sbroersma"
         targetPath: ${{ parameters.targetPath }}
         url: ${{ parameters.url }}
     - id: output_workspace
